@@ -23,10 +23,10 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-//        List<Book> books = List.of(new Book("title1",1), new Book("title2",2));
-//        Author author = new Author();
-//        author.setName( "Ahmaha");
-//        books.forEach(author::addBook);
-//        authorRepository.save(author);
+        List<Book> books = List.of(new Book("title1",1), new Book("title2",2));
+        Author author = new Author();
+        author.setName( "Ahmaha");
+        books.forEach(author::addBook);
+        authorRepository.save(author);
     }
 }
